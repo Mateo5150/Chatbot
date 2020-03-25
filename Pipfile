@@ -9,4 +9,4 @@ verify_ssl = true
 nltk = "*"
 numpy = "*"
 tflearn = "*"
-tensorflow = "1.15"
+tensorflow = "==2.1.0"

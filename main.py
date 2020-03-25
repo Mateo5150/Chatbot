@@ -4,6 +4,7 @@ import random
 
 # NLP stuff
 import nltk
+nltk.download('punkt')
 # nltk.download('punkt')
 from nltk.stem.lancaster import LancasterStemmer
 
@@ -12,7 +13,7 @@ from nltk.stem.lancaster import LancasterStemmer
 import numpy as np
 import tflearn
 import tensorflow as tf
-from tensorflow.python.compiler.tensorrt import trt_convert as trt
+#from tensorflow.python.compiler.tensorrt import trt_convert as trt
 stemmer = LancasterStemmer()
 # from nltk.stem.snowball import FrenchStemmer
 # stemmer = FrenchStemmer()
@@ -42,7 +43,6 @@ classes = sorted(list(set(classes)))
 
 training = []
 output = []
-
 output_empty = [0] * len(classes)
 
 for doc in documents:
